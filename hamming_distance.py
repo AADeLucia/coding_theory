@@ -89,7 +89,8 @@ def create_n_d_code(q, n, d, randomize=False):
 
     return new_code
 
-
-#print(generate_code(2, 6))
-print(create_n_d_code(3, 4, 3))
-#print(create_n_d_code(2, 6, 3))
+if __name__=='__main__':
+    #print(generate_code(2, 6))
+    #print(create_n_d_code(3, 4, 3))
+    print(create_n_d_code(2, 6, 3))
+    
