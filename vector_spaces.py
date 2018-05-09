@@ -51,7 +51,9 @@ def get_orthogonal_set(set, q):
             orthog_set.append(possible_orthog.tolist())
     return orthog_set
 
-set = np.array([[0,0,1,0,1],[1,1,0,0,1],[1,1,0,1,1]])
-span = get_spanning_set(set, 2)
-ortho = get_orthogonal_set(set, 2)
-print(span, '\n', ortho)
+
+if __name__=='__main__':
+    set = np.array([[0,0,1,0,1],[1,1,0,0,1],[1,1,0,1,1]])
+    span = get_spanning_set(set, 2)
+    ortho = get_orthogonal_set(set, 2)
+    print(span, '\n', ortho)
